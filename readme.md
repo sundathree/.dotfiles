@@ -1,5 +1,8 @@
 # Komorebi + YASB
-
+#### Mocha
+![](./assets/1.png)
+#### Monochrome
+![](./assets/2.png)
 ## Programs:
 You're going to need:
 - [Komorebi](https://github.com/LGUG2Z/komorebi)
@@ -24,4 +27,4 @@ Move .config folder to your home/userprofile folder and move the contents inside
 You will need to set up a user variable in order for komorebi to work properly, open your start menu and search for View advanced system settings, once open, click on Environment Variables > User Variables > New, set the variable name to ```KOMOREBI_CONFIG_HOME``` and the value to ```$Env:USERPROFILE/.config/komorebi```. If everything has been done correctly, running ```komorebic check``` on your powershell terminal should display ```KOMOREBI_CONFIG_HOME detected: C:/Users/(username)/.config/komorebi```.
 
 ### 🍫 YASB:
-By default, the location for the weather widget is set to Rio de Janeiro, you may want to change it to your current location. You can change it by looking for ```weather > options > location``` inside ```config.yaml```.
+Inside the YASB folder, there should be folders for each theme, the default theme applied is the Monochrome theme, by default the location for the weather widget is set to Rio de Janeiro, you may want to change it to your current location. You can change it by looking for ```weather > options > location``` inside ```config.yaml```.
