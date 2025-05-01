@@ -1,8 +1,8 @@
 # Komorebi + YASB
 #### Mocha
-![](./assets/1.png)
-#### Monochrome
 ![](./assets/2.png)
+#### Monochrome
+![](./assets/1.png)
 ## Programs:
 You're going to need:
 - [Komorebi](https://github.com/LGUG2Z/komorebi)
