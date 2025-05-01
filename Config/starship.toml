@@ -1,0 +1,23 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+format = "\\[$username@$hostname $directory\\]# "
+
+[username]
+style_user = 'white bold'
+style_root = 'white bold'
+format = '$user'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '$hostname'
+
+[directory]
+truncation_length = 999
+truncate_to_repo = false
+read_only = ""
+use_os_path_sep = true
+style = 'white bold'
+format = '$path'
