@@ -23,7 +23,6 @@
     --surface1: #45475a;
     --surface0: #282936;
     --base: #1e1e2e;
-    --base2: rgba(30, 30, 46, 0.5);
     --mantle: rgba(24, 24, 37, 0.5);
     --crust: rgba(17, 17, 27, 0.5);
 }
@@ -38,8 +37,8 @@
 .yasb-bar {
 	padding: 0 6px;
 	margin: 0;
-  background-color: var(--base2);
-  border-radius: 0px;
+  background-color: var(--base);
+  border-radius: 12px;
 }
 .widget {
 	padding: 0 8px;

@@ -16,7 +16,7 @@ bars:
       position: "top"
       center: false
     blur_effect:
-      enabled: true
+      enabled: false
       acrylic: false
       dark_mode: false
       round_corners: false
@@ -26,12 +26,12 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 28
+      height: 36
     padding:
-      top: 0
-      left: 0
-      bottom: 0
-      right: 0
+      top: 6
+      left: 8
+      bottom: 2
+      right: 8
     widgets:
       left: ["komorebi_workspaces","active_window"]
       center: ["clock"]
