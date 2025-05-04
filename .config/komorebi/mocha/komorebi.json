@@ -1,0 +1,82 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.36/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "mouse_follows_focus": false,
+  "animation": {
+    "enabled": false,
+    "style": "EaseInOutExpo",
+    "fps": 165
+  },
+  "transparency": true,
+  "transparency_alpha": 245,
+  "default_workspace_padding": 6,
+  "default_container_padding": 2,
+  "border": true,
+  "border_width": 3,
+  "border_offset": -1,
+  "border_style": "System",
+  "theme": {
+    "palette": "Base16",
+    "name": "CatppuccinMocha",
+    "unfocused_border": "Base01",
+    "single_border": "Base07",
+    "floating_border": "Base07"
+  },
+  "ignore_rules": [
+    {
+      "id": "osu!.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "RobloxPlayerBeta.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "javaw.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "CapCut.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Dolphin.exe",
+      "kind": "Exe"
+    }
+  ],
+  "floating_applications": [
+    {
+      "id": "obs64.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "snes9x-x64.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "explorer.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "vlc.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Spotify.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Slippi Launcher.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Slippi Dolphin.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "WindowsTerminal.exe",
+      "kind": "Exe"
+    }
+  ]
+}
