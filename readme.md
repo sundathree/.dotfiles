@@ -1,6 +1,6 @@
 # Komorebi + YASB
 #### Mocha
-![](https://i.imgur.com/NOHt5bR.png)
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/2.png)
 #### Monochrome
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/1.png)
 
