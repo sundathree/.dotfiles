@@ -1,6 +1,7 @@
 [System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::UTF8
+Set-PSReadLineOption -Colors @{ Command = [ConsoleColor]::Gray }
+Set-PSReadLineOption -PredictionSource None
 Import-Module matrix
-Import-Module cowsay
 New-Alias ll ls -Force      # ll -> detailed dir listing
 function .. { cd .. }                           # Go up one directory
 function ... { cd ../.. }                       # Go up two directories
@@ -26,3 +27,4 @@ function y {
 }
 Invoke-Expression (&starship init powershell)
 $Env:KOMOREBI_CONFIG_HOME = '$Env:USERPROFILE/.config/komorebi'
+$Env:XGD_CONFIG_HOME = '$Env:USERPROFILE/.config'
