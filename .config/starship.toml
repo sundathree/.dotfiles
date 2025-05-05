@@ -9,10 +9,12 @@ style_root = 'white bold'
 format = '$user'
 disabled = false
 show_always = true
+aliases = { "Miguel" = "miguel" }
 
 [hostname]
 ssh_only = false
 format = '$hostname'
+aliases = { "Navi" = "navi" }
 
 [directory]
 truncation_length = 999
