@@ -16,9 +16,20 @@
   "border_width": 3,
   "border_offset": -1,
   "border_style": "Square",
+  "theme": {
+    "palette": "Base16",
+    "name": "3024",
+    "unfocused_border": "Base01",
+    "single_border": "Base07",
+    "floating_border": "Base07"
+  },
   "ignore_rules": [
     {
       "id": "osu!.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Riot Client.exe",
       "kind": "Exe"
     },
     {
@@ -31,6 +42,14 @@
     },
     {
       "id": "CapCut.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Dolphin.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "wmplayer.exe",
       "kind": "Exe"
     }
   ],
@@ -65,6 +84,10 @@
     },
     {
       "id": "WindowsTerminal.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Photos.exe",
       "kind": "Exe"
     }
   ]
