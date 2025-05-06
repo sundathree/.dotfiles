@@ -3,6 +3,8 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/2.png)
 #### Monochrome
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/1.png)
+#### Gruvbox
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/3.png)
 
 ## Programs:
 You're going to need:

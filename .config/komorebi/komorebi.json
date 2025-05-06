@@ -16,13 +16,6 @@
   "border_width": 3,
   "border_offset": -1,
   "border_style": "Square",
-  "theme": {
-    "palette": "Base16",
-    "name": "3024",
-    "unfocused_border": "Base01",
-    "single_border": "Base07",
-    "floating_border": "Base07"
-  },
   "ignore_rules": [
     {
       "id": "osu!.exe",
