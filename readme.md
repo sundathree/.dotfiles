@@ -17,6 +17,7 @@ You're going to need:
 - [YASB](https://github.com/amnweb/yasb)
 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [Starship](https://starship.rs)
+- [CAVA](https://github.com/karlstav/cava)
 
 You can download everything through your terminal using scoop:
 ```
