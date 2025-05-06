@@ -6,6 +6,11 @@
 #### Gruvbox
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/3.png)
 
+## Fonts used:
+All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
+- JetBrainsMono Nerd Font
+- FiraCode Nerd Font
+
 ## Programs:
 You're going to need:
 - [Komorebi](https://github.com/LGUG2Z/komorebi)
