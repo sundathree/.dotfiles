@@ -13,20 +13,22 @@ All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
 
 ## Programs:
 First of all, make sure you have scoop installed, if you don't, follow the instructions over at scoop's [official website](https://scoop.sh/#/).<br/>
-After scoop is installed, you're going to need:
+#### Buckets:
+```scoop bucket add main```<br/>
+```scoop bucket add extras```<br/>
+```scoop bucket add NSPC911_le-bucket```<br/>
+
+After scoop is installed and all buckets are setup, you're going to need:
 - [Komorebi](https://github.com/LGUG2Z/komorebi)<br/>
-```scoop bucket add extras```
-```scoop install extras/komorebi```
+```scoop install komorebi```
 - [YASB](https://github.com/amnweb/yasb)<br/>
-```scoop bucket add extras```
-```scoop install extras/yasb```
+```scoop install yasb```
 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch)<br/>
 ```scoop install fastfetch```
 - [Starship](https://starship.rs)<br/>
 ```scoop install starship```
 - [CAVA](https://github.com/karlstav/cava)<br/>
-```scoop bucket add NSPC911_le-bucket https://github.com/NSPC911/le-bucket```
-```scoop install NSPC911_le-bucket/cava```
+```scoop install cava```
 
 ## Installation:
 
