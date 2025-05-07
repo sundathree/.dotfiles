@@ -52,3 +52,5 @@ Here are some CLI scripts I use with Git Bash and Powershell, either for fun or 
 ```pip install git+https://github.com/will8211/unimatrix.git windows-curses```
 - [btop4win](https://github.com/aristocratos/btop) - terminal resource monitor<br/>
 ```scoop install btop```
+- [pipes-rs](https://github.com/lhvy/pipes-rs) - funny pipes haha<br/>
+```scoop install pipes-rs```
