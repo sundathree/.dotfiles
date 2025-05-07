@@ -15,7 +15,7 @@
   "border": true,
   "border_width": 3,
   "border_offset": -1,
-  "border_style": "Square",
+  "border_style": "System",
   "theme": {
     "palette": "Base16",
     "name": "GruvboxDarkHard",
