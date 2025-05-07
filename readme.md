@@ -12,7 +12,8 @@ All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
 - FiraCode Nerd Font
 
 ## Programs:
-First of all, make sure you have scoop installed, if you don't, follow the instructions over at scoop's [official website](https://scoop.sh/#/). After scoop is installed, you're going to need:
+First of all, make sure you have scoop installed, if you don't, follow the instructions over at scoop's [official website](https://scoop.sh/#/). After scoop is installed, you're going to need:<br/>
+> Run all commands on your terminal, preferably using Powershell
 - [Buckets](https://scoop.sh/#/buckets)<br/>
 ```scoop bucket add main```<br/>
 ```scoop bucket add extras```<br/>
