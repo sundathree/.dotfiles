@@ -15,7 +15,7 @@ bars:
       center: false
     blur_effect:
       enabled: false
-      acrylic: false
+      acrylic: true
       dark_mode: false
       round_corners: false
       border_color: None
@@ -26,14 +26,14 @@ bars:
       width: "100%"
       height: 28
     padding:
-      top: 4
-      left: 4
+      top: 3
+      left: 3
       bottom: 0
-      right: 4
+      right: 3
     widgets:
-      left: ["komorebi_workspaces", "active_window"]
+      left: ["weather", "komorebi_workspaces", "active_window"]
       center: ["clock"]
-      right: ["cava", "media", "weather", "volume", "power_menu"]
+      right: ["language", "cava", "media", "volume", "power_menu"]
 widgets:
   cava:
     type: "yasb.cava.CavaWidget"
@@ -52,11 +52,10 @@ widgets:
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "<span>\uf001</span> {title}"
-      label_alt: "<span>\uf001</span> {artist}"
+      label: "<span>\uf001</span> {artist} - {title}"
       hide_empty: true
       max_field_size:
-        label: 50
+        label: 20
       show_thumbnail: false
       controls_hide: true
       thumbnail_alpha: 50
@@ -73,13 +72,27 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%I:%M %p}"
+      label: "<span>\uf017</span> {%d/%m/%Y, %H:%M:%S}"
       timezones: [] #Looking up time zone info from registry
       calendar:
         alignment: "center"
       callbacks:
         on_left: "toggle_calendar"
         on_right: "do_nothing"
+  taskbar:
+    type: "yasb.taskbar.TaskbarWidget"
+    options:
+      icon_size: 16
+      animation: true
+      ignore_apps:
+        processes: []
+        titles: []
+        classes: []
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
@@ -100,12 +113,12 @@ widgets:
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
-      label: "<span>{icon}</span> {temp}"
+      label: "<span>{icon}</span> {conditions} {temp} \u00b7 \u2193 {min_temp} \u2191 {max_temp} \u00b7 {precip}"
       api_key: "3bf4cf9a7c3f40d6b31174128242807"
       update_interval: 600
       units: "metric"
       hide_decimal: true
-      location: "Rio de Janeiro"
+      location: "Poland Wroclaw"
       show_alerts: true
       weather_card:
         alignment: "center"
@@ -155,13 +168,25 @@ widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
-      label: "{win[title]}"
+      label: "{win[process][name]}"
       label_alt: ""
       label_no_window: ""
-      label_icon: false
+      label_icon: true
       label_icon_size: 14
-      max_length: 120
+      max_length: 40
       max_length_ellipsis: "..."
       monitor_exclusive: false
       callbacks:
         on_left: "do_nothing"
+  language:
+    type: "yasb.language.LanguageWidget"
+    options:
+      label: "<span>\uf11c</span> {lang[language_code]}"
+      label_alt: "{lang[full_name]}"
+      update_interval: 1
+      callbacks:
+        on_left: "do_nothing"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+      container_padding:
+        bottom: 1

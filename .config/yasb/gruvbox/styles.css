@@ -15,7 +15,7 @@
     --fg0: #e2cca9;
 
 --accent: #e9b143;
-    --background: rgba(50, 48, 45, 0.6); /*bg3*/
+    --background: rgba(69, 64, 61, 0.85); /*bg3*/
     --background-widget: rgba(50, 48, 45, 0.6); /*bg0*/
     --text: #e2cca9;
 }
@@ -33,7 +33,7 @@
 .yasb-bar {
     padding: 0 2px;
     background-color: var(--background);
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .icon {
