@@ -53,5 +53,6 @@ Here are some CLI scripts I use with Git Bash and Powershell, either for fun or 
 ```pip install git+https://github.com/will8211/unimatrix.git windows-curses```
 - [btop4win](https://github.com/aristocratos/btop) - terminal resource monitor<br/>
 ```scoop install btop```
+- [Win11 Toggle Rounded Corners](https://github.com/rich-ayr/win11-toggle-rounded-corners) - i wonder what this does...<br/>
 - [pipes-rs](https://github.com/lhvy/pipes-rs) - funny pipes haha<br/>
 ```scoop install pipes-rs```
