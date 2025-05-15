@@ -2,60 +2,52 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "small",
-    "source": "arch",
     "padding": {
-        "top": 2,
-        "left": 1,
-        "right": 2
-    },
-    "color": {
-        "1": "white",
-        "2": "white"
+      "left": 2,
+      "right": 2,
+      "top": 1
     }
   },
-  "display": {
-    "size": {
+  "display":
+  {
+    "disableLinewrap": true,
+    "color": "default",
+    "size":
+    {
         "maxPrefix": "MB",
-        "ndigits": 0
-    },
-    "color": {
-        "keys": "white",
-        "title": "white"
+        "ndigits": 0,
+        "binaryPrefix": "jedec"
     }
   },
   "modules": [
     "break",
     {
-        "type": "title"
-    },
-    {
         "type": "os",
-        "format": "{name} {version} {variant}"
+        "format": "{id} {variant}"
     },
     {
         "type": "kernel",
-        "format": "{release}"
-    },
-    "shell",
-    {
-        "type": "terminal",
-        "format": "{pretty-name}"
+        "format": "{release} {display-version}"
     },
     {
         "type": "cpu",
-        "format": "{name} @ {freq-max}"
+        "format": "{temperature}{name}"
     },
     {
         "type": "gpu",
         "format": "{name}"
     },
     {
-        "type": "memory",
-        "format": "{used} / {total}"
+        "type": "uptime",
+        "format": "{hours} hours, {minutes} minutes"
+    },
+        {
+        "type": "packages",
+        "format": "{all}"
     },
     {
-        "type": "colors",
-        "symbol": "circle"
+        "type": "memory",
+        "format": "{used} / {total}"
     },
     "break"
   ]
