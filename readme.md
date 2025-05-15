@@ -5,6 +5,8 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/1.png)
 #### Gruvbox
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/3.png)
+#### Minimal
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/4.png)
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).

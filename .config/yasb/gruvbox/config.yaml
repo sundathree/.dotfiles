@@ -15,7 +15,7 @@ bars:
       center: false
     blur_effect:
       enabled: false
-      acrylic: true
+      acrylic: false
       dark_mode: false
       round_corners: false
       border_color: None
@@ -26,36 +26,23 @@ bars:
       width: "100%"
       height: 28
     padding:
-      top: 3
-      left: 3
+      top: 4
+      left: 4
       bottom: 0
-      right: 3
+      right: 4
     widgets:
-      left: ["weather", "komorebi_workspaces", "active_window"]
+      left: ["komorebi_workspaces", "active_window"]
       center: ["clock"]
-      right: ["language", "cava", "media", "volume", "power_menu"]
+      right: ["media", "volume", "power_menu"]
 widgets:
-  cava:
-    type: "yasb.cava.CavaWidget"
-    options:
-      bar_height: 12
-      framerate: 120
-      sleep_timer: 60
-      hide_empty: true
-      gradient: 0
-      foreground: "#e2cca9"
-      container_padding:
-        top: 3
-        right: 2
-        bottom: 3
-        left: 3
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "<span>\uf001</span> {artist} - {title}"
+      label: "<span>\uf001</span> {title}"
+      label_alt: "<span>\uf001</span> {artist}"
       hide_empty: true
       max_field_size:
-        label: 20
+        label: 50
       show_thumbnail: false
       controls_hide: true
       thumbnail_alpha: 50
@@ -68,31 +55,16 @@ widgets:
         pause: "\ue769"
       callbacks:
         on_left: "do_nothing"
-
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "<span>\uf017</span> {%d/%m/%Y, %H:%M:%S}"
+      label: "[ {%I:%M %p} ]"
       timezones: [] #Looking up time zone info from registry
       calendar:
         alignment: "center"
       callbacks:
         on_left: "toggle_calendar"
         on_right: "do_nothing"
-  taskbar:
-    type: "yasb.taskbar.TaskbarWidget"
-    options:
-      icon_size: 16
-      animation: true
-      ignore_apps:
-        processes: []
-        titles: []
-        classes: []
-      container_padding:
-        top: 0
-        left: 8
-        bottom: 0
-        right: 8
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
@@ -110,32 +82,6 @@ widgets:
         left: 0
         bottom: 0
         right: 0
-  weather:
-    type: "yasb.weather.WeatherWidget"
-    options:
-      label: "<span>{icon}</span> {conditions} {temp} \u00b7 \u2193 {min_temp} \u2191 {max_temp} \u00b7 {precip}"
-      api_key: "3bf4cf9a7c3f40d6b31174128242807"
-      update_interval: 600
-      units: "metric"
-      hide_decimal: true
-      location: "Poland Wroclaw"
-      show_alerts: true
-      weather_card:
-        alignment: "center"
-        offset_left: 150
-      callbacks:
-        on_left: "toggle_card"
-      icons:
-        sunnyDay: "\ue30d"
-        clearNight: "\ue32b"
-        cloudyDay: "\udb81\udd99"
-        cloudyNight: "\ue311"
-        rainyDay: "\udb81\ude7e"
-        rainyNight: "\udb81\ude7e"
-        snowyIcyDay: "\udb81\udd98"
-        snowyIcyNight: "\udb81\udd98"
-        blizzard: "\uebaa"
-        default: "\uebaa"
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -168,25 +114,13 @@ widgets:
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
-      label: "{win[process][name]}"
+      label: "{win[title]}"
       label_alt: ""
       label_no_window: ""
-      label_icon: true
+      label_icon: false
       label_icon_size: 14
-      max_length: 40
+      max_length: 60
       max_length_ellipsis: "..."
       monitor_exclusive: false
       callbacks:
         on_left: "do_nothing"
-  language:
-    type: "yasb.language.LanguageWidget"
-    options:
-      label: "<span>\uf11c</span> {lang[language_code]}"
-      label_alt: "{lang[full_name]}"
-      update_interval: 1
-      callbacks:
-        on_left: "do_nothing"
-        on_middle: "do_nothing"
-        on_right: "do_nothing"
-      container_padding:
-        bottom: 1
