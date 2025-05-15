@@ -46,7 +46,7 @@ widgets:
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-      label: "mem {virtual_mem_free}/{virtual_mem_total}"
+      label: "mem {virtual_mem_used}/{virtual_mem_total}"
       update_interval: 5000
       callbacks:
         on_middle: "do_nothing"
