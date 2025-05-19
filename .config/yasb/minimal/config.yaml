@@ -14,9 +14,9 @@ bars:
       position: "bottom"
       center: false
     blur_effect:
-      enabled: false
-      acrylic: false
-      dark_mode: false
+      enabled: true
+      acrylic: true
+      dark_mode: true
       round_corners: false
       border_color: None
     window_flags:
@@ -49,7 +49,7 @@ widgets:
       label: "mem {virtual_mem_used}/{virtual_mem_total}"
       update_interval: 5000
       callbacks:
-        on_middle: "do_nothing"
+        on_left: "do_nothing"
   separator:
     type: "yasb.custom.CustomWidget"
     options:
@@ -61,7 +61,7 @@ widgets:
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "<span>\uf001</span> {title}"
+      label: "{artist} <span>\uf001</span> {title}"
       label_alt: "<span>\uf001</span> {artist}"
       hide_empty: true
       max_field_size:
@@ -92,14 +92,14 @@ widgets:
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-      label_offline: "\u26a1 Offline"
-      label_workspace_btn: "\udb81\udc3d"
-      label_workspace_active_btn: "\udb81\udc3e"
-      label_workspace_populated_btn: "\udb81\udc3e"
+      label_offline: "Komorebi Offline"
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
+      label_workspace_populated_btn: "{index}"
       label_default_name: "{index}"
-      label_zero_index: true
+      label_zero_index: false
       hide_empty_workspaces: false
-      hide_if_offline: true
+      hide_if_offline: false
       animation: true
       container_padding:
         top: 0

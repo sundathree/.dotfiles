@@ -2,7 +2,7 @@
 
 # Reload whkd configuration
 # alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
-# alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+win + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
 # alt + shift + o         : komorebic reload-configuration
 
 # App shortcuts - these require shell to be pwsh / powershell
@@ -14,6 +14,7 @@ alt + y                 : if (Get-Process -Name "yasb" -ErrorAction SilentlyCont
 
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
+alt + p                 : komorebic pause
 
 # Focus windows
 alt + h                 : komorebic focus left
@@ -48,7 +49,7 @@ win + 5                 : komorebic focus-workspace 4
 win + 6                 : komorebic focus-workspace 5
 win + 7                 : komorebic focus-workspace 6
 win + 8                 : komorebic focus-workspace 7
-win + shift + q         : komorebic close-workspace
+win + shift + f4        : komorebic close-workspace
 
 # Move windows across workspaces
 win + shift + 1         : komorebic move-to-workspace 0
