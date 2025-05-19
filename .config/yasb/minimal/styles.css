@@ -60,53 +60,24 @@
     padding: 2px 0px 1px 0px;
 }
 
-.komorebi-workspaces .offline-status {
-    color: var(--text);
-    font-size: 12px;
-    padding: 0 0px;
-    font-weight: 600;
-}
-
 .komorebi-workspaces .ws-btn {
+    font-size: 11px;
     border: none;
-    margin: 0 3px;
+    color: #282828;
+    margin: 0 1px 0 1px;
     height: 10px;
-    width: 9px;
-    border-radius: 2px;
-    background-color: var(--bg4);
-    color: rgba(0, 0, 0, 0);
+    padding: 0 6px;
 }
-
 .komorebi-workspaces .ws-btn:hover {
-    color: rgba(0, 0, 0, 0);
-    background-color: var(--grey0);
+    color: #383838;
 }
-
-.komorebi-workspaces .ws-btn.populated:hover {
-    color: rgba(0, 0, 0, 0);
-    background-color: var(--grey1);
-}
-
 .komorebi-workspaces .ws-btn.populated {
-    color: rgba(0, 0, 0, 0);
-    background-color: var(--grey1);
+    color: #a0a0a0;
 }
-
 .komorebi-workspaces .ws-btn.active {
-    color: rgba(0, 0, 0, 0);
-    background-color: var(--accent);
-    height: 13px;
+    color: #ffffff;
+    font-weight: 900;
 }
-
-.komorebi-active-layout {
-    padding: 0 0px 0 0;
-}
-
-.komorebi-active-layout .label {
-    font-weight: 600;
-    padding: 2px 0 0 0;
-}
- 
 
 /* MEDIA */
 

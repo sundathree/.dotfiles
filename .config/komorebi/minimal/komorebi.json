@@ -2,10 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.36/schema.json",
   "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
   "window_hiding_behaviour": "Cloak",
+  "mouse_follows_focus": false,
   "default_workspace_padding": 4,
   "default_container_padding": 4,
-  "border_style": "Square",
-  "border": true,
+  "border_style": "System",
+  "border": false,
   "border_width": 2,
   "border_offset": -1,
   "theme": {
