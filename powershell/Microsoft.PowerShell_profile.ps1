@@ -24,4 +24,3 @@ function y {
 }
 Invoke-Expression (&starship init powershell)
 $Env:KOMOREBI_CONFIG_HOME = '$Env:USERPROFILE/.config/komorebi'
-$Env:XDG_CONFIG_HOME = '$Env:USERPROFILE/.config'
