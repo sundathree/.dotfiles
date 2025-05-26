@@ -27,8 +27,6 @@ First of all, make sure you have scoop installed, if you don't, follow the instr
 ```scoop install komorebi```
 - [YASB](https://github.com/amnweb/yasb)<br/>
 ```scoop install yasb```
-- [Fastfetch](https://github.com/fastfetch-cli/fastfetch)<br/>
-```scoop install fastfetch```
 - [Starship](https://starship.rs)<br/>
 ```scoop install starship```
 - [CAVA](https://github.com/karlstav/cava)<br/>
@@ -50,6 +48,8 @@ This repo comes with the default YASB initial config. Inside the YASB folder the
 
 ## CLI Scripts:
 Here are some CLI scripts I use with Git Bash and Powershell, either for fun or daily usage:
+- [Fastfetch](https://github.com/fastfetch-cli/fastfetch) - fetches system info<br/>
+```scoop install fastfetch```
 - [Yazi](https://github.com/sxyazi/yazi) - terminal file manager<br/>
 ```scoop install yazi```
 - [ani-cli](https://github.com/pystardust/ani-cli) - watch anime on your terminal (git bash only)<br/>
