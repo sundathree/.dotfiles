@@ -73,10 +73,10 @@ widgets:
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-      label_offline: "offline"
-      label_workspace_btn: "{name}"
-      label_workspace_active_btn: "{name}"
-      label_workspace_populated_btn: "{name}"
+      label_offline: " \ue654  offline"
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
+      label_workspace_populated_btn: "{index}"
       label_default_name: ""
       label_zero_index: false
       hide_empty_workspaces: true
