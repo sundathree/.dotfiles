@@ -1,8 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = false
-#format = "\\[$username@$hostname $directory\\]\\$ "
 format = "$directory \\$ "
+#format = "\\[$username@$hostname $directory\\]\\$ "
+#format = """\\[$username@$hostname\\]::\\[$directory\\]
+#λ """
+#format = """\\[$directory\\]
+#λ """
 #format = "$username@$hostname:$directory# "
 
 [username]
@@ -11,12 +15,10 @@ style_root = 'white bold'
 format = '$user'
 disabled = false
 show_always = true
-aliases = { "Miguel" = "miguel" }
 
 [hostname]
 ssh_only = false
 format = '$hostname'
-aliases = { "Navi" = "navi" }
 
 [directory]
 truncation_length = 999

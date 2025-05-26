@@ -1,0 +1,109 @@
+watch_stylesheet: true
+watch_config: true
+debug: false
+komorebi:
+  start_command: "komorebic start --whkd"
+  stop_command: "komorebic stop"
+  reload_command: "komorebic stop && komorebic start --whkd"
+bars:
+  status-bar:
+    enabled: true
+    screens: ["*"]
+    class_name: "yasb-bar"
+    alignment:
+      position: "bottom"
+      center: false
+    blur_effect:
+      enabled: false
+      acrylic: false
+      dark_mode: true
+      round_corners: false
+      border_color: None
+    window_flags:
+      always_on_top: false
+      windows_app_bar: true
+    dimensions:
+      width: "100%"
+      height: 20
+    padding:
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+    widgets:
+      left: ["komorebi_workspaces"]
+      center: ["media"]
+      right: ["cpu", "separator", "memory", "separator", "volume", "separator", "clock"]
+widgets:
+  separator:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "::"
+      label_alt: "::"
+      class_name: "separator-widget"
+      callbacks:
+        on_left: "do_nothing"
+  cpu:
+    type: "yasb.cpu.CpuWidget"
+    options:
+      label: "cpu {info[percent][total]}%"
+      label_alt: 
+      update_interval: 2000
+      callbacks:
+        on_left: "do_nothing"
+  memory:
+    type: "yasb.memory.MemoryWidget"
+    options:
+      label: "mem {virtual_mem_used}/{virtual_mem_total}"
+      update_interval: 5000
+      callbacks:
+        on_left: "do_nothing"
+        on_left: "do_nothing"
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "time {%Y-%m-%d %H:%M:%S}"
+      label_alt: "time {%Y-%m-%d %H:%M:%S}"
+      timezones: [] #Looking up time zone info from registry
+      calendar:
+        alignment: "center"
+      callbacks:
+        on_left: "do_nothing"
+        on_right: "do_nothing"
+  komorebi_workspaces:
+    type: "komorebi.workspaces.WorkspaceWidget"
+    options:
+      label_offline: "offline"
+      label_workspace_btn: "{name}"
+      label_workspace_active_btn: "{name}"
+      label_workspace_populated_btn: "{name}"
+      label_default_name: ""
+      label_zero_index: false
+      hide_empty_workspaces: true
+      hide_if_offline: false
+      animation: false
+      container_padding:
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "vol {level}"
+      label_alt: "{volume}"
+      callbacks:
+        on_right: "toggle_mute"
+        on_left: "do_nothing"
+  media:
+    type: "yasb.media.MediaWidget"
+    options:
+      label: "{artist} \uf001  {title}"
+      label_alt: "\uf001  {artist}"
+      hide_empty: true
+      max_field_size:
+        label: 100
+      show_thumbnail: false
+      controls_hide: true
+      callbacks:
+        on_left: "do_nothing"

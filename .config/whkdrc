@@ -15,18 +15,19 @@ alt + y                 : if (Get-Process -Name "yasb" -ErrorAction SilentlyCont
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
 alt + p                 : komorebic pause
+alt + i                 : komorebic toggle-shortcuts
 
 # Focus windows
-alt + h                 : komorebic focus left
-alt + j                 : komorebic focus down
-alt + k                 : komorebic focus up
-alt + l                 : komorebic focus right
+alt + left              : komorebic focus left
+alt + down              : komorebic focus down
+alt + up                : komorebic focus up
+alt + right             : komorebic focus right
 
 # Move windows
-alt + shift + h         : komorebic move left
-alt + shift + j         : komorebic move down
-alt + shift + k         : komorebic move up
-alt + shift + l         : komorebic move right
+alt + shift + left      : komorebic move left
+alt + shift + down      : komorebic move down
+alt + shift + up        : komorebic move up
+alt + shift + right     : komorebic move right
 
 # Resize
 alt + oem_plus          : komorebic resize-axis horizontal increase

@@ -7,11 +7,14 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/3.png)
 #### Minimal
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/4.png)
+#### Nord
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/5.png)
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
 - JetBrainsMono Nerd Font
 - FiraCode Nerd Font
+- Iosevka Nerd Font
 
 ## Programs:
 First of all, make sure you have scoop installed, if you don't, follow the instructions over at scoop's [official website](https://scoop.sh/#/). After scoop is installed, you're going to need:<br/>
@@ -52,6 +55,7 @@ Here are some CLI scripts I use with Git Bash and Powershell, either for fun or 
 - [ani-cli](https://github.com/pystardust/ani-cli) - watch anime on your terminal (git bash only)<br/>
 ```scoop install ani-cli```
 - [unimatrix](https://github.com/will8211/unimatrix) - python-made cmatrix alternative<br/>
+- [rs-matrix](https://github.com/TitaniumBrain/rs-matrix) - rust-made cmatrix alternative (supports terminal transparency)<br/>
 ```pip install git+https://github.com/will8211/unimatrix.git windows-curses```
 - [btop4win](https://github.com/aristocratos/btop) - terminal resource monitor<br/>
 ```scoop install btop```

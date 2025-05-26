@@ -1,0 +1,63 @@
+:root {
+    --background: #2E3440; /* i3: #222222, d++:#1E1E1E, #2E3440 */
+    --text: #D8DEE9; /* i3: #9b8d7f, d++: #CCCCCC, #D8DEE9 */
+    --text-darker: #81A1C1; /* i3: #544c44, d++: #686868, nord: #81A1C1 */
+}
+
+/* GLOBAL */
+* {
+    font-size: 12px;
+    color: var(--text);
+    font-weight: 500;
+    font-family: "Iosevka NF Medium";
+    margin: 0;
+    padding: 0;
+}
+
+.yasb-bar {
+    padding: 0 0px;
+    background-color: var(--background);
+    border-radius: 0px;
+}
+
+.label {
+    padding: 0 6px 0 0;
+      margin: 0 3px 1px 0;
+}
+
+.widget {
+    padding: 0 0px;
+    margin: 0;
+}
+
+.widget .label {
+    padding: 2px 0px 1px 0px;
+}
+
+.komorebi-workspaces .widget-container {
+  background-color: var(--background);
+}
+
+.komorebi-workspaces .ws-btn {
+    border: none;
+    color: var(--text-darker);
+    margin: 0 1px 0 1px;
+    height: 20px;
+    width: 10px;
+    padding: 0 3px;
+}
+
+.komorebi-workspaces .ws-btn.populated {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: var(--background);
+    font-weight: 500;
+}
+
+.komorebi-workspaces .widget-container .ws-btn.active {
+  background-color: var(--text);
+  height: 20px;
+}
