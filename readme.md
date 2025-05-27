@@ -10,7 +10,8 @@
 #### Nord
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/5.png)
 #### i3blocks
-Based on [Coding with Sphere](https://www.youtube.com/@codingwithsphere)'s [Arch setup](https://www.youtube.com/watch?v=s-WhWBuwtqI)
+> Based on [Coding with Sphere](https://www.youtube.com/@codingwithsphere)'s [Arch setup](https://www.youtube.com/watch?v=s-WhWBuwtqI)
+
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/6.png)
 
 ## Fonts used:
