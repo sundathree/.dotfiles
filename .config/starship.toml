@@ -1,12 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = false
-format = "$directory \\$ "
+#format = "$directory \\$ "
 #format = "\\[$username@$hostname $directory\\]\\$ "
 #format = """\\[$username@$hostname\\]::\\[$directory\\]
 #λ """
-#format = """\\[$directory\\]
-#λ """
+format = """$directory
+λ """
 #format = "$username@$hostname:$directory# "
 
 [username]

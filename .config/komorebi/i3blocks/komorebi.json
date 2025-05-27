@@ -1,0 +1,160 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.37/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "mouse_follows_focus": false,
+  "default_workspace_padding": 0,
+  "default_container_padding": 0,
+  "border": false,
+  "animation": {
+    "enabled": false
+  },
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "1",
+          "layout": "BSP"
+        },
+        {
+          "name": "2",
+          "layout": "BSP"
+        },
+        {
+          "name": "3",
+          "layout": "BSP"
+        },
+        {
+          "name": "4",
+          "layout": "BSP"
+        },
+        {
+          "name": "5",
+          "layout": "BSP",
+          "workspace_padding": 32,
+          "container_padding": 8
+        }
+      ]
+    }
+  ],
+  "ignore_rules": [
+    {
+      "id": "osu!.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "AI.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "qbittorrent.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "cs2.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "WinRAR.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "dllhost.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "GeometryDash.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "hl.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "avidemux.exe",
+      "kind": "Exe"
+    },
+		{
+			"id": "Resolve.exe",
+			"kind": "Exe"
+		},
+    {
+      "id": "Riot Client.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "RobloxPlayerBeta.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "javaw.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "CapCut.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Dolphin.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "wmplayer.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "VirtualBox.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "VirtualBoxVM.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "VBoxSDS.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "VBoxSVC.exe",
+      "kind": "Exe"
+    }
+  ],
+  "floating_applications": [
+    {
+      "id": "obs64.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "snes9x-x64.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "explorer.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "vlc.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Slippi Launcher.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Slippi Dolphin.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "WindowsTerminal.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "Photos.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "mpv.exe",
+      "kind": "Exe"
+    }
+  ]
+}
