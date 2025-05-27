@@ -1,7 +1,7 @@
 :root {
-    --background: #2E3440; /* i3: #222222, d++:#1E1E1E, nord: #2E3440 */
-    --text: #D8DEE9; /* i3: #9b8d7f, d++: #CCCCCC, nord: #D8DEE9 */
-    --text-darker: #81A1C1; /* i3: #544c44, d++: #686868, nord: #81A1C1 */
+    --background: #222222; /* i3: #222222, d++:#1E1E1E, nord: #2E3440 */
+    --text: #9b8d7f; /* i3: #9b8d7f, d++: #CCCCCC, nord: #D8DEE9 */
+    --text-darker: #544c44; /* i3: #544c44, d++: #686868, nord: #81A1C1 */
 }
 
 /* GLOBAL */
