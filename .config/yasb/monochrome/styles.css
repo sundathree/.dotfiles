@@ -1,18 +1,4 @@
 :root {
-    --rosewater: #ffffff;
-    --flamingo: #f0f0f0;
-    --pink: #e0e0e0;
-    --mauve: #d0d0d0;
-    --red: #c0c0c0;
-    --maroon: #b0b0b0;
-    --peach: #a0a0a0;
-    --yellow: #909090;
-    --green: #808080;
-    --teal: #707070;
-    --sky: #606060;
-    --sapphire: #505050;
-    --blue: #404040;
-    --lavender: #303030;
     --text: #ffffff;
     --subtext1: #e0e0e0;
     --subtext0: #c0c0c0;
@@ -22,39 +8,33 @@
     --surface2: #404040;
     --surface1: #202020;
     --surface0: #101010;
-    --base: #000000;
-    --base2: rgba(20, 20, 20, 0.25);
-    --mantle: rgba(20, 20, 20, 0.5);
-    --crust: rgba(40, 40, 40, 0.5);
+    --base: rgba(20, 20, 20, 0.25);
 }
-*{
+
+* { /* global */
 	font-size: 12px;
-	color: var(--subtext0);
+	color: var(--text);
 	font-weight: 700;
 	font-family: "JetBrainsMono NFP";
-	margin: 0;
-	padding: 0;
 }
+
 .yasb-bar {
-	padding: 0 6px;
-	margin: 0;
-  background-color: var(--base2);
-  border-radius: 0px;
+	padding: 0 3px 0 0;
+    background-color: var(--base);
 }
+
 .widget {
 	padding: 0 8px;
-	margin: 0;
 }
+
 .widget .label {
-	padding: 2px 2px 2px 2px;
+	padding: 1px 0px 1px 0px;
 }
+
 .widget .label.alt {
-	padding: 1px 8px 1px 8px;
+	padding: 1px 0px 1px 0px;
 }
- .clock-widget .label {
-    padding-left:8px;
-    color: var(--text)
-}
+
 .komorebi-workspaces .widget-container {
     margin-left: 0px;
 }
@@ -113,10 +93,12 @@
 	font-weight: 600;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .power-menu-widget .label {
 	color: #eba0ac;
 	font-size: 16px;
 }
+
 .power-menu-popup .button {
 	padding: 0;
 	width: 160px;
@@ -126,12 +108,13 @@
 	font-family: "SegoeUI";
 	color: white;
 	border: 4px solid rgba(255, 255, 255, 0);
- 
 }
+
 .power-menu-popup .button.hover {
 	background-color: rgb(55, 55, 55);
 	border: 4px solid rgb(55, 55, 55);
 }
+
 .power-menu-popup .button .label {
 	margin-bottom: 8px;
 	font-size: 16px;
@@ -139,64 +122,51 @@
 	color: rgba(255, 255, 255, 0.6);
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .power-menu-popup .button .icon {
 	font-size: 64px;
 	padding-top: 54px;
 	color: rgba(255, 255, 255, 0.25);
 }
+
 .power-menu-popup .button.cancel .icon {
 	color: rgba(243, 139, 168, 0.55);
 }
+
 .power-menu-popup .button.cancel .label {
 	color: rgba(243, 139, 168, 0.95);
 }
-.wifi-widget {
-    padding: 0 4px 0 9px;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-}
 
-/* ICONS */
-.icon {
-	font-size: 16px;
-}
 .volume-widget .icon {
-	font-size: 15px;
-	color: var(--text);
-	margin: 1px 3px 0px 0px;
+	font-size: 16px;
+	margin: 0px 3px 0px 0px;
 } 
-.start-menu .icon {
-    font-size: 18px;
-	color: #89b4fa
-}
-.clock-widget .icon {
-	color: #ffffff;
-    font-size: 14px;
-}
+
 /* WEATHER WIDGET */
 .weather-widget .icon {
 	font-size: 16px;
-	margin: 0 2px 2px 0;
+	margin: 0px 3px 0px 0px;
 }
-.weather-widget .label {
-    padding-right:0px;
-}
+
 .weather-widget .icon.sunnyDay {
 	color: rgb(255, 255, 255);
 }
+
 .weather-widget .icon.clearNight {
 	color: rgb(255, 255, 255);
 	font-size: 20px;
-	margin: -1px 2px 0px 0;
 }
+
 .weather-widget .icon.rainyNight {
     font-size: 16px;
     color: rgb(255, 255, 255)
 }
+
 .weather-widget .icon.cloudyDay {
     font-size: 18px;
     color: rgb(255, 255, 255);
 }
+
 .weather-widget .icon.rainyDay {
     color: rgb(255, 255, 255)
 }
@@ -205,95 +175,14 @@
 	padding: 0;
 	margin: 0;
 }
+
 .media-widget .label {
 	color: var(--text);
-  padding-top: 6px;
-	padding-right: 16px;
-}
-.media-widget .btn {
-	color: var(--text);
-	padding: 0 0px;
-	padding-right: 0px;
-	margin: 4px 0;
-	font-family: Segoe Fluent Icons;
-}
-.media-widget .btn:hover {
-	color: var(--text);
-}
-.media-widget .btn.play {
-	font-size: 16px;
-}
-.media-widget .btn.prev {
-    padding: 0 0px 0 0px;	
-    font-size: 12px;
-}
-.media-widget .btn.next {
-    padding: 0 8px 0 0px;
-    font-size: 12px;
-}
-.media-widget .btn.disabled:hover,
-.media-widget .btn.disabled {
-	color: var(--text);
-	font-size: 12px;
-	background-color: rgba(0, 0, 0, 0);
+	padding-right: 8px;
 }
 
-.wallpapers-widget {
-    padding: 0 6px 0 6px;
-}
-.wallpapers-widget .icon {
-    font-size: 16px;
-    color: var(--mauve);
-}
-.wallpapers-gallery-window {
-    background-color: rgba(24, 24, 24, 220);
-    border: 0;
-    margin: 0;
-}
-.wallpapers-gallery-buttons {
-    background-color:rgba(255, 255, 255, 0);
-    color: white;
-    border: none;
-    font-size: 14px;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin:0 8px 8px 8px;
-    width: 600px;
-}
-
-.update-check-widget {
-    padding: 0 4px 0 0px;
-}
-.update-check-widget .icon {
-    font-size: 16px;
-}
-.update-check-widget .widget-container.winget,
-.update-check-widget .widget-container.windows {
-    background: var(--blue);
-    margin: 7px 2px 7px 2px;
-    border-radius: 10px;
-    border: 0px solid var(--sapphire);
-}
-.update-check-widget .widget-container.winget .icon,
-.update-check-widget .widget-container.windows .icon {
-    color: var(--base);
-    margin: 0 2px 0 6px;
-}
-.update-check-widget .widget-container.winget .label,
-.update-check-widget .widget-container.windows .label {
-    margin: 0 6px 0 1px;
-    color: var(--base);
-    font-weight: 900;
-    font-size: 14px;
-}
-
-.active-window-widget .widget-container .label {
-    color: var(--text);
-    padding-top: 3px;
-
-}
 .calendar {
-    background-color: rgba(17, 17, 27, 0.4);
+    background-color: rgba(17, 17, 27, 0.25);
 }
 .calendar .calendar-table,
 .calendar .calendar-table::item {
@@ -305,12 +194,15 @@
     border: none;
     outline: none;  
 }
+
 .calendar .calendar-table::item:selected {
     color: rgb(255, 255, 255);
 }
+
 .calendar .day-label {
     margin-top: 20px;
 }
+
 .calendar .day-label,
 .calendar .month-label,
 .calendar .date-label {
@@ -321,17 +213,20 @@
     min-width: 180px;
     max-width: 180px;
 }
+
 .calendar .month-label {
     font-weight: normal;
 }
+
 .calendar .date-label {
     font-size: 88px;
     font-weight: 900;
     color: rgb(255, 255, 255);
     margin-top: -20px;
 }
+
 .memory-widget .icon {
-	font-size: 14px;
+	font-size: 16px;
 	color: #ffffff;
-	margin: 0 2px 1px 0;
+	margin: 0px 3px 0px 0px;
 }

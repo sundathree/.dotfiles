@@ -47,29 +47,28 @@ widgets:
     type: "yasb.cpu.CpuWidget"
     options:
       label: "cpu {info[percent][total]}%"
-      label_alt: 
-      update_interval: 15000
+      update_interval: 7500
       callbacks:
         on_left: "do_nothing"
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
       label: "mem {virtual_mem_used}/{virtual_mem_total}"
-      update_interval: 15000
+      update_interval: 7500
       callbacks:
         on_left: "do_nothing"
   clock:
     type: "yasb.clock.ClockWidget"
     options:
       label: "time {%Y-%m-%d %H:%M:%S}"
-      timezones: [] #Looking up time zone info from registry
+      timezones: []
       callbacks:
         on_left: "do_nothing"
         on_right: "do_nothing"
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-      label_offline: " \ue654  offline"
+      label_offline: " \ue654 offline"
       label_workspace_btn: "{index}"
       label_workspace_active_btn: "{index}"
       label_workspace_populated_btn: "{index}"
@@ -84,7 +83,7 @@ widgets:
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "{artist} \uf001  {title}"
+      label: "{artist} \uf001 {title}"
       hide_empty: true
       max_field_size:
         label: 100

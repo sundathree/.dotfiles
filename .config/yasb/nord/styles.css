@@ -1,7 +1,7 @@
 :root {
-    --background: #2E3440; /* i3: #222222, d++:#1E1E1E, nord: #2E3440 */
-    --text: #D8DEE9; /* i3: #9b8d7f, d++: #CCCCCC, nord: #D8DEE9 */
-    --text-darker: #81A1C1; /* i3: #544c44, d++: #686868, nord: #81A1C1 */
+    --background: #2E3440;
+    --text: #D8DEE9;
+    --text-darker: #81A1C1;
 }
 
 /* GLOBAL */
@@ -9,9 +9,7 @@
     font-size: 12px;
     color: var(--text);
     font-weight: 500;
-    font-family: "Iosevka NF";
-    margin: 0;
-    padding: 0;
+    font-family: "Iosevka NFP Medium";
 }
 
 .yasb-bar {
@@ -23,11 +21,6 @@
 .label {
     padding: 0 6px 0 0;
     margin: 0 3px 1px 0;
-}
-
-.widget {
-    padding: 0 0px;
-    margin: 0;
 }
 
 .widget .label {
