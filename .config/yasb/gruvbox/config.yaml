@@ -16,8 +16,8 @@ bars:
     blur_effect:
       enabled: false
       acrylic: false
-      dark_mode: false
-      round_corners: false
+      dark_mode: true
+      round_corners: true
       border_color: None
     window_flags:
       always_on_top: false
@@ -28,38 +28,64 @@ bars:
     padding:
       top: 4
       left: 4
-      bottom: 0
+      bottom: 4
       right: 4
     widgets:
       left: ["komorebi_workspaces", "active_window"]
       center: ["clock"]
-      right: ["media", "volume", "power_menu"]
+      right: ["cava", "media", "weather", "volume", "power_menu"]
 widgets:
+  cava:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 12
+      framerate: 165
+      sleep_timer: 60
+      hide_empty: true
+      gradient: 0
+      foreground: "#e2cca9"
+      container_padding:
+        top: 3
+        right: 2
+        bottom: 3
+        left: 3
+  weather:
+    type: "yasb.weather.WeatherWidget"
+    options:
+      label: "<span>{icon}</span> {temp}"
+      api_key: 'fbe53750f5524f9bafb201037252704'
+      update_interval: 600
+      hide_decimal: true
+      location: 'Rio De Janeiro'
+      callbacks:
+        on_left: "do_nothing"
+      icons: 
+        sunnyDay: "\ue30d"
+        clearNight: "\ue32b"
+        cloudyDay: "\udb81\udd99"
+        cloudyNight: "\ue311"
+        rainyDay: "\udb81\ude7e"
+        rainyNight: "\udb81\ude7e"
+        snowyIcyDay: "\udb81\udd98"
+        snowyIcyNight: "\udb81\udd98"
+        blizzard: "\uebaa"
+        default: "\uebaa"
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "<span>\uf001</span> {title}"
-      label_alt: "<span>\uf001</span> {artist}"
+      label: "\uf001 {title}"
+      label_alt: "\uf001 {artist}"
       hide_empty: true
       max_field_size:
-        label: 50
+        label: 30
+        label_alt: 30
       show_thumbnail: false
       controls_hide: true
-      thumbnail_alpha: 50
-      thumbnail_padding: 70
-      thumbnail_corner_radius: 5
-      icons:
-        prev_track: "\ue892"
-        next_track: "\ue893"
-        play: "\ue768"
-        pause: "\ue769"
-      callbacks:
-        on_left: "do_nothing"
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "[ {%I:%M %p} ]"
-      timezones: [] #Looking up time zone info from registry
+      label: "{%I:%M %p}"
+      timezones: []
       calendar:
         alignment: "center"
       callbacks:
@@ -73,29 +99,22 @@ widgets:
       label_workspace_active_btn: "\udb81\udc3e"
       label_workspace_populated_btn: "\udb81\udc3e"
       label_default_name: "{index}"
-      label_zero_index: true
       hide_empty_workspaces: false
       hide_if_offline: true
-      animation: true
-      container_padding:
-        top: 0
-        left: 0
-        bottom: 0
-        right: 0
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
       label: "<span>{icon}</span> {level}"
       label_alt: "{volume}"
       volume_icons:
-        - "\ueee8" # Icon for muted
-        - "\uf026" # Icon for 0-10% volume
-        - "\uf027" # Icon for 11-30% volume
-        - "\uf027" # Icon for 31-60% volume
-        - "\uf028" # Icon for 61-100% volume
+        - "\ueee8"  # Icon for muted
+        - "\uf026"  # Icon for 0-10% volume
+        - "\uf027"  # Icon for 11-30% volume
+        - "\uf027"  # Icon for 31-60% volume
+        - "\uf028"  # Icon for 61-100% volume
       callbacks:
-        on_right: "exec cmd.exe /c start ms-settings:sound"
-        on_middle: "toggle_mute"
+        on_right: "toggle_mute"
+        on_left: "do_nothing"
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
@@ -115,12 +134,10 @@ widgets:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
       label: "{win[title]}"
-      label_alt: ""
+      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
       label_no_window: ""
       label_icon: false
       label_icon_size: 14
       max_length: 60
       max_length_ellipsis: "..."
       monitor_exclusive: false
-      callbacks:
-        on_left: "do_nothing"

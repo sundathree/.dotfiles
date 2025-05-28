@@ -1,21 +1,8 @@
 :root {
-    --yellow: #b3b3b3;
-    --red: #a8a8a8;
-    --bg0: #4e4e4e;
-    --bg1: #4e4e4e;
-    --bg2: #5a5a5a;
-    --bg3: #636363;
-    --bg4: #717171;
-    --bg5: #8a8a8a;
-    --bg_dim: #3d3d3d;
-    --grey0: #9a9a9a;
-    --grey1: #a5a5a5;
-    --grey2: #b6b6b6;
-    --fg0: #d6d6d6;
-    --accent: #FFFFFF;
     --background: #000000;
-    --background-widget: #000000;
     --text: #FFFFFF;
+    --text-empty: #282828;
+    --text-populated: #A0A0A0;
 }
 
 /* GLOBAL */
@@ -24,113 +11,35 @@
     color: var(--text);
     font-weight: 900;
     font-family: "JetBrainsMono NFP";
-    margin: 0;
-    padding: 0;
 }
 
 .yasb-bar {
-    padding: 0 2px;
+    padding: 0 3px 0 0;
     background-color: var(--background);
-    border-radius: 0px;
-}
-
-.icon {
-    color: var(--accent);
-    font-size: 14px;
-    margin: 0 5px;
 }
 
 .label {
     padding: 0 6px 0 0;
-      margin: 0 3px 1px 0;
-}
-
-.widget {
-    padding: 0 0px;
-    margin: 0;
-}
-
-.widget-container {
-    background-color: var(--background-widget);
-    margin: 4px 0px;
-    border-radius: 6px;
+    margin: 0 3px 1px 0;
 }
 
 .widget .label {
-    padding: 2px 0px 1px 0px;
+    padding: 1px 0px 1px 0px;
 }
 
 .komorebi-workspaces .ws-btn {
-    font-size: 11px;
     border: none;
-    color: #282828;
+    color: var(--text-empty);
     margin: 0 1px 0 1px;
-    height: 10px;
+    height: 28px;
     padding: 0 6px;
 }
-.komorebi-workspaces .ws-btn:hover {
-    color: #383838;
-}
+
 .komorebi-workspaces .ws-btn.populated {
-    color: #a0a0a0;
+    color: var(--text-populated);
 }
+
 .komorebi-workspaces .ws-btn.active {
-    color: #ffffff;
+    color: var(--text);
     font-weight: 900;
-}
-
-/* MEDIA */
-
-.media-widget .label {
-    padding: 0 10px -1px;
-}
-
-.media-widget .btn {
-    color: var(--accent);
-    padding: 0 0px;
-    padding-right: 0px;
-    margin: 4px 0;
-    font-family: Segoe Fluent Icons;
-}
-
-.media-widget .btn:hover {
-    color: var(--subtext0);
-}
-
-.media-widget .btn.disabled:hover,
-.media-widget .btn.disabled {
-    color: var(--surface1);
-    font-size: 12px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-/* VOLUME */
-
-.volume-slider {
-    border: none;
-}
-.volume-slider::groove {
-    color: var(--accent)
-}
-.volume-slider::handle{
-    color: var(--accent)
-} 
-.audio-menu {
-    background-color: var(--bg_dim); 
-    border: 1px solid var(--grey1);
-    border-radius: 6px;
-}
-.audio-container .device {
-    background-color:transparent;
-    border: none;
-    padding:6px 8px 6px 4px;
-    margin: 2px 0;
-    font-size: 12px;
-    border-radius: 4px;
-}
-.audio-container .device.selected {
-    background-color: rgba(255, 255, 255, 0.085);
-}
-.audio-container .device:hover {
-    background-color: rgba(255, 255, 255, 0.06);
 }

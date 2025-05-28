@@ -34,39 +34,48 @@
 	margin: 0;
 	padding: 0;
 }
+
 .yasb-bar {
-	padding: 0 6px;
+	padding: 0 6px 0 0;
 	margin: 0;
-  background-color: var(--base);
-  border-radius: 12px;
+    background-color: var(--base);
+    border-radius: 12px;
 }
+
 .widget {
 	padding: 0 8px;
 	margin: 0;
 }
+
 .widget .label {
-	padding: 2px 2px 2px 2px;
+	padding: 1px 0px 1px 0px;
 }
+
 .widget .label.alt {
-	padding: 1px 8px 1px 8px;
+	padding: 1px 0px 1px 0px;
 }
+
  .clock-widget .label {
-    padding-left:8px;
+    padding-left: 8px;
 }
+
 .komorebi-workspaces .widget-container {
     margin-left: 0px;
 }
+
 .komorebi-workspaces .widget-container {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none
 }
+
 .komorebi-workspaces .offline-status {
     color: var(--subtext1);
     font-size: 12px;
     padding: 0 0px;
     font-weight: 600;
 }
+
 .komorebi-workspaces .ws-btn {
     border: none;
     background-color: var(--surface1);
@@ -76,32 +85,29 @@
     border-radius: 4px;
     color: rgba(0, 0, 0, 0);
 }
+
 .komorebi-workspaces .ws-btn:hover {
     color: rgba(0, 0, 0, 0);
     background-color: var(--surface2);
 }
+
 .komorebi-workspaces .ws-btn.populated:hover {
     color: rgba(0, 0, 0, 0);
     background-color: var(--overlay1);
 }
+
 .komorebi-workspaces .ws-btn.populated {
     color: rgba(0, 0, 0, 0);
     background-color: var(--overlay0);
 }
+
 .komorebi-workspaces .ws-btn.active {
     color: rgba(0, 0, 0, 0);
     background-color: var(--subtext0);
     width: 28px;
     height: 10px;
 }
-.komorebi-active-layout {
-    padding: 0 0px 0 0;
-}
 
-.komorebi-active-layout .label {
-    font-weight: 600;
-    padding: 2px 0 0 0;
-}
 /*POWER MENU WIDGET*/
 /* Uptime text */
 .uptime {
@@ -148,11 +154,6 @@
 .power-menu-popup .button.cancel .label {
 	color: rgba(243, 139, 168, 0.95);
 }
-.wifi-widget {
-    padding: 0 4px 0 9px;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-}
 
 /* ICONS */
 .icon {
@@ -161,8 +162,8 @@
 .volume-widget .icon {
 	font-size: 15px;
 	color: var(--blue);
-	margin: 1px 3px 1px 0px;
-} 
+	margin: 0px 3px 0px 0px;
+}
 .start-menu .icon {
     font-size: 18px;
 	color: #89b4fa
@@ -174,7 +175,7 @@
 /* WEATHER WIDGET */
 .weather-widget .icon {
 	font-size: 16px;
-	margin: 0 2px 0px 0;
+	margin: 0 3px 0px 0;
 }
 .weather-widget .label {
     padding-right:0px;
@@ -185,7 +186,7 @@
 .weather-widget .icon.clearNight {
 	color: rgb(107, 189, 221);
 	font-size: 20px;
-	margin: -1px 2px 0px 0;
+	margin: -1px 3px 0px 0;
 }
 .weather-widget .icon.rainyNight {
     font-size: 16px;
@@ -202,86 +203,11 @@
 	padding: 0;
 	margin: 0;
 }
+
 .media-widget .label {
 	color: var(--lavender);
     padding: 0px;
-	padding-right: 16px;
-}
-.media-widget .btn {
-	color: var(--overlay1);
-	padding: 0 0px;
-	padding-right: 0px;
-	margin: 4px 0;
-	font-family: Segoe Fluent Icons;
-}
-.media-widget .btn:hover {
-	color: var(--subtext0);
-}
-.media-widget .btn.play {
-	font-size: 16px;
-}
-.media-widget .btn.prev {
-    padding: 0 0px 0 0px;	
-    font-size: 12px;
-}
-.media-widget .btn.next {
-    padding: 0 8px 0 0px;
-    font-size: 12px;
-}
-.media-widget .btn.disabled:hover,
-.media-widget .btn.disabled {
-	color: var(--surface1);
-	font-size: 12px;
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.wallpapers-widget {
-    padding: 0 6px 0 6px;
-}
-.wallpapers-widget .icon {
-    font-size: 16px;
-    color: var(--mauve);
-}
-.wallpapers-gallery-window {
-    background-color: rgba(24, 24, 37, 220);
-    border: 0;
-    margin: 0;
-}
-.wallpapers-gallery-buttons {
-    background-color:rgba(255, 255, 255, 0);
-    color: white;
-    border: none;
-    font-size: 14px;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin:0 8px 8px 8px;
-    width: 600px;
-}
-
-.update-check-widget {
-    padding: 0 4px 0 0px;
-}
-.update-check-widget .icon {
-    font-size: 16px;
-}
-.update-check-widget .widget-container.winget,
-.update-check-widget .widget-container.windows {
-    background: var(--blue);
-    margin: 7px 2px 7px 2px;
-    border-radius: 10px;
-    border: 0px solid var(--sapphire);
-}
-.update-check-widget .widget-container.winget .icon,
-.update-check-widget .widget-container.windows .icon {
-    color: var(--base);
-    margin: 0 2px 0 6px;
-}
-.update-check-widget .widget-container.winget .label,
-.update-check-widget .widget-container.windows .label {
-    margin: 0 6px 0 1px;
-    color: var(--base);
-    font-weight: 900;
-    font-size: 14px;
+	padding-right: 8px;
 }
 
 .active-window-widget .widget-container .label {
@@ -328,5 +254,5 @@
 .memory-widget .icon {
 	font-size: 14px;
 	color: #f7a6a6;
-	margin: 0 2px 1px 0;
+	margin: 0 3px 0px 0;
 }

@@ -15,12 +15,48 @@
   "border": true,
   "border_width": 3,
   "border_offset": -1,
-  "border_style": "Square",
+  "border_style": "System",
   "ignore_rules": [
     {
       "id": "osu!.exe",
       "kind": "Exe"
     },
+    {
+      "id": "AI.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "qbittorrent.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "cs2.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "WinRAR.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "dllhost.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "GeometryDash.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "hl.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "avidemux.exe",
+      "kind": "Exe"
+    },
+		{
+			"id": "Resolve.exe",
+			"kind": "Exe"
+		},
     {
       "id": "Riot Client.exe",
       "kind": "Exe"
@@ -44,6 +80,22 @@
     {
       "id": "wmplayer.exe",
       "kind": "Exe"
+    },
+    {
+      "id": "VirtualBox.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "VirtualBoxVM.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "VBoxSDS.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "VBoxSVC.exe",
+      "kind": "Exe"
     }
   ],
   "floating_applications": [
@@ -64,10 +116,6 @@
       "kind": "Exe"
     },
     {
-      "id": "Spotify.exe",
-      "kind": "Exe"
-    },
-    {
       "id": "Slippi Launcher.exe",
       "kind": "Exe"
     },
@@ -81,6 +129,10 @@
     },
     {
       "id": "Photos.exe",
+      "kind": "Exe"
+    },
+    {
+      "id": "mpv.exe",
       "kind": "Exe"
     }
   ]
