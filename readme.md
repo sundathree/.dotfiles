@@ -11,8 +11,9 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/5.png)
 #### i3blocks
 > Based on [Coding with Sphere](https://www.youtube.com/@codingwithsphere)'s [Arch setup](https://www.youtube.com/watch?v=s-WhWBuwtqI)
-
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/6.png)
+#### Gruvbox V2
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/7.png)
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
