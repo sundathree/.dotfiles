@@ -1,0 +1,52 @@
+:root {
+    --background: #282828;
+    --text: #ebdbb2;
+    --text-darker: #a89984;
+}
+
+/* GLOBAL */
+* {
+    font-size: 12px;
+    color: var(--text);
+    font-weight: 500;
+    font-family: "Iosevka NFP Medium";
+}
+
+.yasb-bar {
+    padding: 0 3px 0 0;
+    background-color: var(--background);
+}
+
+.label {
+    padding: 0 6px 0 0;
+    margin: 0 3px 1px 0;
+}
+
+.widget .label {
+    padding: 1px 0px 1px 0px;
+}
+
+.komorebi-workspaces .widget-container {
+  background-color: var(--background);
+}
+
+.komorebi-workspaces .ws-btn {
+    border: none;
+    color: var(--text-darker);
+    margin: 0 1px 0 1px;
+    height: 20px;
+    width: 8px;
+    padding: 0 2px;
+}
+
+.komorebi-workspaces .ws-btn.populated {
+    color: var(--text);
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: var(--background);
+}
+
+.komorebi-workspaces .widget-container .ws-btn.active {
+  background-color: var(--text);
+}
