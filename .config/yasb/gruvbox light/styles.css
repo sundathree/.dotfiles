@@ -1,0 +1,117 @@
+:root {
+  --background: #f2e5bc;
+  --widget-background: #fbf1c7;
+  --text: #3c3836;
+  --text-darker: #7c6f64;
+}
+
+* {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 500;
+  font-family: "UbuntuSansMono NFP";
+}
+
+.yasb-bar {
+  padding: 0 0px 0 0;
+  background-color: var(--background);
+}
+
+.separator-widget .label {
+  padding: 0px 8px;
+}
+
+.separator-widget .widget-container {
+  background-color: var(--widget-background);
+}
+
+.media-widget .widget-container {
+  background-color: var(--widget-background);
+}
+
+.clock-widget .widget-container {
+  background-color: var(--widget-background);
+}
+
+.volume-widget .icon {
+  padding-top: 1px;
+}
+
+.volume-widget .widget-container {
+  background-color: var(--widget-background);
+}
+
+.memory-widget .label{
+  margin-left: 8px;
+}
+
+.memory-widget .icon {
+  margin-left: 8px;
+}
+
+.memory-widget .widget-container {
+  background-color: var(--widget-background);
+}
+
+.komorebi-workspaces .widget-container {
+  background-color: var(--widget-background);
+}
+
+.komorebi-workspaces .ws-btn {
+  border: none;
+  color: var(--text-darker);
+  width: 26;
+  height: 20;
+}
+
+.komorebi-workspaces .ws-btn.populated {
+  color: var(--text);
+}
+
+.komorebi-workspaces .ws-btn.active {
+  color: var(--text);
+}
+
+.komorebi-workspaces .widget-container .ws-btn.active {
+  background-color: var(--background);
+}
+
+.active-window-widget .label {
+  padding: 0 3px;
+}
+
+.komorebi-active-layout .widget-container {
+  background-color: var(--widget-background);
+}
+
+.komorebi-layout-menu {
+    background-color: rgba(235, 219, 178, 0.4)
+}
+
+.komorebi-layout-menu .menu-item {
+    padding: 8px 16px;
+    font-size: 12px;
+    color: #3c3836; 
+    font-weight: 600;
+}
+
+.komorebi-layout-menu .menu-item-icon {
+    color: #3c3836; 
+    font-size: 16px;
+}
+
+.komorebi-layout-menu .menu-item-text {
+    font-family: 'Segoe UI';
+    padding-left:4px;
+    font-size: 12px;
+} 
+
+.komorebi-layout-menu .menu-item:hover {
+    background-color: rgba(213, 196, 161, 0.5); 
+    color: #282828;
+} 
+
+.komorebi-layout-menu .separator {
+    max-height: 1px;
+    background-color: rgba(60, 56, 54, 0.2);
+}
