@@ -1,29 +1,33 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = false
-#format = "$directory \\$ "
-#format = "\\[$username@$hostname $directory\\]\\$ "
-#format = """\\[$username@$hostname\\]::\\[$directory\\]
-#λ """
-format = """$directory
-λ """
-#format = "$username@$hostname:$directory# "
+# format = "$directory \\$ "
+#format = "\\[$username$hostname $directory\\]\\$ "
+# format = "\\[$username$hostname $directory\\]# "
+format = "$username$hostname $directory % "
+# format = """\\[$username$hostname\\]::\\[$directory\\]
+# λ """
+# format = """$directory
+# λ """
+# format = "$username$hostname:$directory# "
 
 [username]
 style_user = 'white bold'
 style_root = 'white bold'
-format = '$user'
+format = '[$user]($style)'
 disabled = false
 show_always = true
+aliases = { "Miguel" = "miguel" }
 
 [hostname]
 ssh_only = false
-format = '$hostname'
+style = 'white bold'
+format = '[@$hostname]($style)'
 
 [directory]
 truncation_length = 999
 truncate_to_repo = false
 read_only = ""
 use_os_path_sep = true
-style = 'blue bold'
-format = '$path'
+style = 'white bold'
+format = '[$path]($style)'

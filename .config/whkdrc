@@ -2,20 +2,18 @@
 
 # Reload whkd configuration
 # alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
-win + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+# win + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
 # alt + shift + o         : komorebic reload-configuration
 
-# App shortcuts - these require shell to be pwsh / powershell
-# The apps will be focused if open, or launched if not open
-# alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
-# alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+# App shortcuts
 alt + z                 : if ($wshell.AppActivate('Zen') -eq $False) { start zen }
 alt + y                 : if (Get-Process -Name "yasb" -ErrorAction SilentlyContinue) { yasbc stop } else { yasbc start }
+ctrl + alt + t          : if ($wshell.AppActivate('wt') -eq $False) { start wt }
 
+# Control windows
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
 alt + p                 : komorebic pause
-alt + i                 : komorebic toggle-shortcuts
 
 # Focus windows
 alt + left              : komorebic focus left
@@ -34,6 +32,9 @@ alt + oem_plus          : komorebic resize-axis horizontal increase
 alt + oem_minus         : komorebic resize-axis horizontal decrease
 alt + shift + oem_plus  : komorebic resize-axis vertical increase
 alt + shift + oem_minus : komorebic resize-axis vertical decrease
+win + shift + oem_plus  : komorebic adjust-container-padding increase 4; komorebic adjust-workspace-padding increase 4
+win + shift + oem_minus : komorebic adjust-container-padding decrease 4; komorebic adjust-workspace-padding decrease 4
+win + shift + r         : komorebic focused-workspace-padding 4; komorebic focused-workspace-container-padding 4 
 
 # Manipulate windows
 alt + t                 : komorebic toggle-float
@@ -50,7 +51,7 @@ win + 5                 : komorebic focus-workspace 4
 win + 6                 : komorebic focus-workspace 5
 win + 7                 : komorebic focus-workspace 6
 win + 8                 : komorebic focus-workspace 7
-win + shift + f4        : komorebic close-workspace
+win + shift + q         : komorebic close-workspace
 
 # Move windows across workspaces
 win + shift + 1         : komorebic move-to-workspace 0

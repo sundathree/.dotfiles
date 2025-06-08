@@ -15,12 +15,17 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/6.png)
 #### Gruvbox V2
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/7.png)
+#### Ubuntu Nord
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/8.png)
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
+> [!NOTE]
+> YASB will not work properly if the required fonts aren't installed, so make sure to install all fonts.
 - JetBrainsMono Nerd Font
 - FiraCode Nerd Font
 - Iosevka Nerd Font
+- UbuntuSansMono Nerd Font
 
 ## Programs:
 First of all, make sure you have scoop installed, if you don't, follow the instructions over at scoop's [official website](https://scoop.sh/#/). After scoop is installed, you're going to need:<br/>
