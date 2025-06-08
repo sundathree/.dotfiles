@@ -20,7 +20,7 @@
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
-> [!NOTE]
+> [!WARNING]
 > YASB will not work properly if the required fonts aren't installed, so make sure to install all fonts.
 - JetBrainsMono Nerd Font
 - FiraCode Nerd Font
