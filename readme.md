@@ -17,6 +17,8 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/7.png)
 #### Ubuntu Nord
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/8.png)
+#### Gruvbox Light
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/9.png)
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
