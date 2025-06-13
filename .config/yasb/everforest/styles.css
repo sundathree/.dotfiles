@@ -1,0 +1,73 @@
+:root {
+    --background: rgba(45, 53, 59, 0.7);
+    --transparent: rgba(255, 255, 255, 0.3);
+    --text: #D3C6AA;
+}
+
+* {
+    font-size: 16px;
+    color: var(--text);
+    font-family: "Hack Nerd Font Propo";
+}
+
+.yasb-bar {
+    padding: 0 10px 0 0;
+    background-color: var(--background);
+}
+
+.separator-widget .icon {
+    color: var(--transparent);
+    padding: 0 10px 2px;
+    font-size: 10px;
+}
+
+.komorebi-workspaces .ws-btn {
+    border: none;
+    color: var(--text);
+    width: 36;
+    height: 28;
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: var(--background);
+}
+
+.komorebi-workspaces .widget-container .ws-btn.active {
+    background-color: var(--text);
+}
+
+.active-window-widget .label {
+    padding: 0 0 0 4px;
+}
+
+.komorebi-layout-menu {
+    background-color: var(--background);
+}
+
+.komorebi-layout-menu .menu-item {
+    padding: 8px 16px;
+    font-size: 12px;
+    color: var(--text); 
+    font-weight: 600;
+}
+
+.komorebi-layout-menu .menu-item-icon {
+    color: var(--text); 
+    font-size: 16px;
+}
+
+.komorebi-layout-menu .menu-item-text {
+    font-family: 'Segoe UI';
+    padding-left:4px;
+    font-size: 12px;
+} 
+
+.komorebi-layout-menu .menu-item:hover {
+    background-color: var(--transparent); 
+    color: var(--background);
+} 
+
+.komorebi-layout-menu .separator {
+    max-height: 1px;
+    background-color: var(--transparent);
+}
