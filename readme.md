@@ -19,6 +19,8 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/8.png)
 #### Gruvbox Light
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/9.png)
+#### Everforest
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/10.png)
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
@@ -28,6 +30,7 @@ All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
 - FiraCode Nerd Font
 - Iosevka Nerd Font
 - UbuntuSansMono Nerd Font
+- Hack Nerd Font
 
 ## Programs:
 First of all, make sure you have scoop installed, if you don't, follow the instructions over at scoop's [official website](https://scoop.sh/#/). After scoop is installed, you're going to need:<br/>
