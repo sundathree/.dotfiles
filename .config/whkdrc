@@ -32,9 +32,9 @@ alt + oem_plus          : komorebic resize-axis horizontal increase
 alt + oem_minus         : komorebic resize-axis horizontal decrease
 alt + shift + oem_plus  : komorebic resize-axis vertical increase
 alt + shift + oem_minus : komorebic resize-axis vertical decrease
-win + shift + oem_plus  : komorebic adjust-container-padding increase 4; komorebic adjust-workspace-padding increase 4
-win + shift + oem_minus : komorebic adjust-container-padding decrease 4; komorebic adjust-workspace-padding decrease 4
-win + shift + r         : komorebic focused-workspace-padding 4; komorebic focused-workspace-container-padding 4 
+win + shift + oem_plus  : komorebic adjust-container-padding increase 2; komorebic adjust-workspace-padding increase 2
+win + shift + oem_minus : komorebic adjust-container-padding decrease 2; komorebic adjust-workspace-padding decrease 2
+win + shift + r         : komorebic focused-workspace-padding 2; komorebic focused-workspace-container-padding 2
 
 # Manipulate windows
 alt + t                 : komorebic toggle-float
@@ -51,6 +51,8 @@ win + 5                 : komorebic focus-workspace 4
 win + 6                 : komorebic focus-workspace 5
 win + 7                 : komorebic focus-workspace 6
 win + 8                 : komorebic focus-workspace 7
+win + 9                 : komorebic focus-workspace 8
+win + 0                 : komorebic focus-workspace 9
 win + shift + q         : komorebic close-workspace
 
 # Move windows across workspaces
@@ -62,3 +64,5 @@ win + shift + 5         : komorebic move-to-workspace 4
 win + shift + 6         : komorebic move-to-workspace 5
 win + shift + 7         : komorebic move-to-workspace 6
 win + shift + 8         : komorebic move-to-workspace 7
+win + shift + 9         : komorebic move-to-workspace 8
+win + shift + 0         : komorebic move-to-workspace 9

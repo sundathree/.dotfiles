@@ -5,7 +5,8 @@
     "source": "arch",
     "padding": {
       "top": 1,
-      "left": 2
+      "left": 1,
+      "right": 2
     }
   },
   "display":
@@ -14,40 +15,50 @@
     {
         "maxPrefix": "MB",
         "ndigits": 0,
-        "binaryPrefix": "iec"
-    }
+        "binaryPrefix": "jedec"
+    },
+    "separator": " ",
+    "brightColor": true
   },
   "modules": [
     "break",
-    {
-        "type": "title",
-        "format": "{user-name-colored}{at-symbol-colored}{host-name-colored}"
-    },
+    "title",
     {
         "type": "os",
-        "format": "{id}"
+        "format": "{id}",
+        "key": "os",
+        "keyWidth": 8
+    },
+    {
+        "type": "shell",
+        "format": "bash {version}",
+        "key": "shell",
+        "keyWidth": 8
     },
     {
         "type": "uptime",
-        "format": "{hours} hours, {minutes} minutes"
+        "format": "{hours}h {minutes}m",
+        "key": "uptime",
+        "keyWidth": 8
     },
-    "shell",
+    {
+        "type": "packages",
+        "format": "{all}",
+        "key": "pkgs",
+        "keyWidth": 8
+    },
     {
         "type": "cpu",
-        "format": "{name}"
-    },
-    {
-        "type": "gpu",
-        "format": "{name}"
+        "format": "{name}",
+        "key": "cpu",
+        "keyWidth": 8
     },
     {
         "type": "memory",
-        "key": "RAM",
-        "format": "{used} / {total}"
+        "key": "memory",
+        "format": "{used} / {total}",
+        "keyWidth": 8
     },
-    {
-      "type": "colors",
-      "symbol": "circle"
-    }
+    "break"
   ]
 }
