@@ -21,6 +21,8 @@
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/9.png)
 #### Everforest
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/10.png)
+#### Kanagawa
+![](https://github.com/sundathree/.dotfiles/blob/main/assets/11.png)
 
 ## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
@@ -28,6 +30,7 @@ All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
 > YASB will not work properly if the required fonts aren't installed, so make sure to install all fonts.
 - JetBrainsMono Nerd Font
 - FiraCode Nerd Font
+- FiraMono Nerd Font
 - Iosevka Nerd Font
 - UbuntuSansMono Nerd Font
 - Hack Nerd Font
