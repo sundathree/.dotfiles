@@ -1,43 +1,43 @@
 # Komorebi + YASB
 
-## Mocha
+### Mocha
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/2.png)
 
-## Monochrome
+### Monochrome
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/1.png)
 
-## Gruvbox
+### Gruvbox
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/3.png)
 
-## Minimal
+### Minimal
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/4.png)
 
-## Nord
+### Nord
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/5.png)
 
-## i3blocks
+### i3blocks
 
 > Based on [Coding with Sphere](https://www.youtube.com/@codingwithsphere)'s 
 > [Arch setup](https://www.youtube.com/watch?v=s-WhWBuwtqI)
 
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/6.png)
 
-## Gruvbox V2
+### Gruvbox V2
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/7.png)
 
-## Ubuntu Nord
+### Ubuntu Nord
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/8.png)
 
-## Gruvbox Light
+### Gruvbox Light
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/9.png)
 
-## Everforest
+### Everforest
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/10.png)
 
-## Kanagawa
+### Kanagawa
 ![](https://github.com/sundathree/.dotfiles/blob/main/assets/11.png)
 
-### Fonts used:
+## Fonts used:
 All fonts are available on [nerdfonts.com](https://www.nerdfonts.com).
 
 > [!WARNING]
