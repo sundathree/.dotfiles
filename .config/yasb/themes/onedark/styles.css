@@ -1,7 +1,7 @@
 :root {
-    --background: rgba(31, 31, 40, 1);
+    --background: rgba(40, 44, 52, 0.75);
     --transparent: rgba(255, 255, 255, 0.3);
-    --text: #DCD7BA;
+    --text: #DCDFE4;
 }
 
 * {
@@ -11,33 +11,29 @@
 }
 
 .yasb-bar {
-    padding: 0 16px 0 6px;
+    padding: 0 10px 0 0;
     background-color: var(--background);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 
 .separator-widget .icon {
     color: var(--transparent);
     padding: 0 10px 2px;
-    font-size: 12px;
-}
-
-.active-window-widget .label {
-    padding: 0 0 0 4px;
+    font-size: 10px;
 }
 
 .komorebi-workspaces .ws-btn {
     border: none;
     color: var(--transparent);
     width: 32;
-    height: 32;
+    height: 24;
 }
 
 .komorebi-workspaces .ws-btn.active {
     color: var(--text);
+}
+
+.active-window-widget .label {
+    padding: 0 0 0 4px;
 }
 
 .komorebi-layout-menu {

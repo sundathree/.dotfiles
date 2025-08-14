@@ -1,43 +1,39 @@
 :root {
-    --background: rgba(45, 53, 59, 0.7);
+    --background: rgba(31, 31, 40, 0.95);
     --transparent: rgba(255, 255, 255, 0.3);
-    --text: #D3C6AA;
+    --text: #DCD7BA;
 }
 
 * {
     font-size: 16px;
-    color: var(--text);
     font-family: "Hack Nerd Font Propo";
+    color: var(--text);
 }
 
 .yasb-bar {
-    padding: 0 10px 0 0;
+    padding: 0 12px 0 6px;
     background-color: var(--background);
 }
 
 .separator-widget .icon {
     color: var(--transparent);
     padding: 0 10px 2px;
-    font-size: 10px;
-}
-
-.komorebi-workspaces .ws-btn {
-    border: none;
-    color: var(--text);
-    width: 36;
-    height: 28;
-}
-
-.komorebi-workspaces .ws-btn.active {
-    color: var(--background);
-}
-
-.komorebi-workspaces .widget-container .ws-btn.active {
-    background-color: var(--text);
+    font-size: 12px;
 }
 
 .active-window-widget .label {
     padding: 0 0 0 4px;
+}
+
+.komorebi-workspaces .ws-btn {
+    border: none;
+    color: var(--transparent);
+    width: 32;
+    height: 32;
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: var(--text);
 }
 
 .komorebi-layout-menu {

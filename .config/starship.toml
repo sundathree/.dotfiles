@@ -1,33 +1,13 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """$username\
-$hostname\
-$directory\
-$line_break$character"""
+format = "$directory \\$ "
 
 add_newline = false
-
-[username]
-disabled = false
-show_always = true
-style_user = "green bold"
-style_root = "green bold"
-format = "[$user]($style)"
-
-[hostname]
-ssh_only = false
-style = "blue bold"
-format = " on [$hostname ]($style)"
 
 [directory]
 truncation_length = 999
 truncate_to_repo = false
 read_only = ""
 use_os_path_sep = true
-style = "yellow bold"
-format = "at [$path ]($style)"
-
-[character]
-format = "$symbol "
-success_symbol = "[❯](green bold)"
-error_symbol = "[❯](red bold)"
+style = 'blue bold'
+format = '[$path]($style)'

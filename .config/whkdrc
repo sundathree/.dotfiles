@@ -1,46 +1,34 @@
 .shell powershell
 
-# Reload whkd configuration
-# alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
-# win + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
-# alt + shift + o         : komorebic reload-configuration
-
 # App shortcuts
 alt + z                 : if ($wshell.AppActivate('Zen') -eq $False) { start zen }
 alt + y                 : if (Get-Process -Name "yasb" -ErrorAction SilentlyContinue) { yasbc stop } else { yasbc start }
-ctrl + alt + t          : if ($wshell.AppActivate('wt') -eq $False) { start wt }
+win + return            : if ($wshell.AppActivate('wt') -eq $False) { start wt }
 
 # Control windows
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
-alt + p                 : komorebic pause
 
 # Focus windows
-alt + left              : komorebic focus left
-alt + down              : komorebic focus down
-alt + up                : komorebic focus up
-alt + right             : komorebic focus right
+alt + h                 : komorebic focus left
+alt + j                 : komorebic focus down
+alt + k                 : komorebic focus up
+alt + l                 : komorebic focus right
 
 # Move windows
-alt + shift + left      : komorebic move left
-alt + shift + down      : komorebic move down
-alt + shift + up        : komorebic move up
-alt + shift + right     : komorebic move right
+alt + shift + h         : komorebic move left
+alt + shift + j         : komorebic move down
+alt + shift + k         : komorebic move up
+alt + shift + l         : komorebic move right
 
 # Resize
 alt + oem_plus          : komorebic resize-axis horizontal increase
 alt + oem_minus         : komorebic resize-axis horizontal decrease
 alt + shift + oem_plus  : komorebic resize-axis vertical increase
 alt + shift + oem_minus : komorebic resize-axis vertical decrease
-win + shift + oem_plus  : komorebic adjust-container-padding increase 2; komorebic adjust-workspace-padding increase 2
-win + shift + oem_minus : komorebic adjust-container-padding decrease 2; komorebic adjust-workspace-padding decrease 2
-win + shift + r         : komorebic focused-workspace-padding 2; komorebic focused-workspace-container-padding 2
 
 # Manipulate windows
 alt + t                 : komorebic toggle-float
-
-# Window manager options
-alt + shift + r         : komorebic retile
 
 # Workspaces
 win + 1                 : komorebic focus-workspace 0
@@ -53,7 +41,6 @@ win + 7                 : komorebic focus-workspace 6
 win + 8                 : komorebic focus-workspace 7
 win + 9                 : komorebic focus-workspace 8
 win + 0                 : komorebic focus-workspace 9
-win + shift + q         : komorebic close-workspace
 
 # Move windows across workspaces
 win + shift + 1         : komorebic move-to-workspace 0

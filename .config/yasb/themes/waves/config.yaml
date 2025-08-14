@@ -14,7 +14,7 @@ bars:
       position: "top"
       center: false
     blur_effect:
-      enabled: false
+      enabled: true
       acrylic: false
       dark_mode: true
       round_corners: false
@@ -24,21 +24,21 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 32
+      height: 20
     padding:
-      top: 0
+      top: 8
       left: 8
       bottom: 0
       right: 8
     widgets:
-      left: ["komorebi_workspaces", "active_window"]
+      left: ["komorebi_workspaces", "komorebi_active_layout", "active_window"]
       right: ["media", "separator", "cpu", "separator", "memory", "separator", "volume", "separator", "calendar", "separator", "clock"]
 widgets:
   separator:
     type: "yasb.custom.CustomWidget"
     options:
-      label: "<span>|</span>"
-      label_alt: "<span>|</span>"
+      label: "<span>\ue0bb</span>"
+      label_alt: "<span>\ue0bb</span>"
       class_name: "separator-widget"
       callbacks:
         on_left: "do_nothing"
@@ -52,7 +52,7 @@ widgets:
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
-      label: "\uefc5 {virtual_mem_used}"
+      label: "\uefc5 {virtual_mem_used}/{virtual_mem_total}"
       update_interval: 3000
       callbacks:
         on_left: "do_nothing"
@@ -60,9 +60,9 @@ widgets:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
       label_offline: " \ue654 offline"
-      label_workspace_btn: "{name}"
-      label_workspace_active_btn: "{name}"
-      label_workspace_populated_btn: "{name}"
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
+      label_workspace_populated_btn: "{index}"
       hide_empty_workspaces: true
   volume:
     type: "yasb.volume.VolumeWidget"
@@ -81,8 +81,8 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "\uf017 {%H:%M}"
-      label_alt: "\uf017 {%H:%M}"
+      label: "\uf017 {%I:%M %p}"
+      label_alt: "\uf017 {%I:%M %p}"
       locale: ""
       update_interval: 1000
       timezones: []

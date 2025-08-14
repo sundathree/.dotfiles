@@ -32,7 +32,6 @@ bars:
       right: 0
     widgets:
       left: ["komorebi_workspaces"]
-      center: ["media"]
       right: ["cpu", "separator", "memory", "separator", "volume", "separator", "clock"]
 widgets:
   separator:
@@ -47,14 +46,14 @@ widgets:
     type: "yasb.cpu.CpuWidget"
     options:
       label: "cpu {info[percent][total]}%"
-      update_interval: 7500
+      update_interval: 3000
       callbacks:
         on_left: "do_nothing"
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
       label: "mem {virtual_mem_used}/{virtual_mem_total}"
-      update_interval: 7500
+      update_interval: 3000
       callbacks:
         on_left: "do_nothing"
   clock:
@@ -79,15 +78,4 @@ widgets:
       label: "vol {level}"
       callbacks:
         on_right: "toggle_mute"
-        on_left: "do_nothing"
-  media:
-    type: "yasb.media.MediaWidget"
-    options:
-      label: "{artist} \uf001 {title}"
-      hide_empty: true
-      max_field_size:
-        label: 100
-      show_thumbnail: false
-      controls_hide: true
-      callbacks:
         on_left: "do_nothing"

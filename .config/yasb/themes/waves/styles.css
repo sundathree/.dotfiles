@@ -1,0 +1,81 @@
+:root {
+  --background: rgba(0, 0, 0, 0.7);
+  --hover: #666666;
+  --text: #FFFFFF;
+  --text-darker: #FFFFFF;
+}
+
+* {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+  font-family: "JetBrainsMono NFP";
+}
+
+.yasb-bar {
+  padding: 0 10px 0 0;
+  background-color: var(--background);
+}
+
+.icon {
+  font-size: 14px;
+}
+
+.separator-widget .icon {
+  font-size: 40px;
+}
+
+.komorebi-workspaces .ws-btn {
+  border: none;
+  color: var(--text-darker);
+  width: 20;
+  height: 20;
+}
+
+.komorebi-workspaces .ws-btn.populated {
+  color: var(--text);
+}
+
+.komorebi-workspaces .ws-btn.active {
+  color: var(--background);
+}
+
+.komorebi-workspaces .widget-container .ws-btn.active {
+  background-color: var(--text);
+}
+
+.active-window-widget .label {
+  padding: 0 1px 0 0;
+}
+
+.komorebi-layout-menu {
+    background-color: var(--background) 
+}
+
+.komorebi-layout-menu .menu-item {
+    padding: 8px 16px;
+    font-size: 12px;
+    color: var(--text); 
+    font-weight: 600;
+}
+
+.komorebi-layout-menu .menu-item-icon {
+    color: var(--text); 
+    font-size: 16px;
+}
+
+.komorebi-layout-menu .menu-item-text {
+    font-family: 'Segoe UI';
+    padding-left:4px;
+    font-size: 12px;
+} 
+
+.komorebi-layout-menu .menu-item:hover {
+    background-color: var(--hover); 
+    color: var(--background);
+} 
+
+.komorebi-layout-menu .separator {
+    max-height: 1px;
+    background-color: #666666;
+}

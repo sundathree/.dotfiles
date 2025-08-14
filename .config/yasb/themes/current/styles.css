@@ -1,0 +1,45 @@
+:root {
+    --background: #151515;
+    --text: #E1E1E1;
+    --transparent: rgba(255, 255, 255, 0.5);
+    --active-ws: #5792C2;
+}
+
+* {
+    font-size: 12px;
+    font-family: "Iosevka NFP Medium";
+    color: var(--text);
+}
+
+.yasb-bar {
+    padding: 0 8px 0 0;
+    background-color: var(--background);
+}
+
+.separator-widget .label {
+    padding: 0 4px;
+    font-size: 10px;
+    color: var(--transparent);
+}
+
+.komorebi-workspaces .widget-container {
+    background-color: var(--background);
+}
+
+.komorebi-workspaces .ws-btn {
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
+.komorebi-workspaces .ws-btn.populated {
+    color: var(--text);
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: var(--text);
+}
+
+.komorebi-workspaces .widget-container .ws-btn.active {
+    background-color: var(--active-ws);
+}
