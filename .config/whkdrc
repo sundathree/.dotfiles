@@ -5,32 +5,26 @@ alt + z                 : if ($wshell.AppActivate('Zen') -eq $False) { start zen
 alt + y                 : if (Get-Process -Name "yasb" -ErrorAction SilentlyContinue) { yasbc stop } else { yasbc start }
 win + return            : if ($wshell.AppActivate('wt') -eq $False) { start wt }
 
-# Control windows
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
 
-# Focus windows
 alt + h                 : komorebic focus left
 alt + j                 : komorebic focus down
 alt + k                 : komorebic focus up
 alt + l                 : komorebic focus right
 
-# Move windows
 alt + shift + h         : komorebic move left
 alt + shift + j         : komorebic move down
 alt + shift + k         : komorebic move up
 alt + shift + l         : komorebic move right
 
-# Resize
 alt + oem_plus          : komorebic resize-axis horizontal increase
 alt + oem_minus         : komorebic resize-axis horizontal decrease
 alt + shift + oem_plus  : komorebic resize-axis vertical increase
 alt + shift + oem_minus : komorebic resize-axis vertical decrease
 
-# Manipulate windows
 alt + t                 : komorebic toggle-float
 
-# Workspaces
 win + 1                 : komorebic focus-workspace 0
 win + 2                 : komorebic focus-workspace 1
 win + 3                 : komorebic focus-workspace 2
@@ -42,7 +36,6 @@ win + 8                 : komorebic focus-workspace 7
 win + 9                 : komorebic focus-workspace 8
 win + 0                 : komorebic focus-workspace 9
 
-# Move windows across workspaces
 win + shift + 1         : komorebic move-to-workspace 0
 win + shift + 2         : komorebic move-to-workspace 1
 win + shift + 3         : komorebic move-to-workspace 2

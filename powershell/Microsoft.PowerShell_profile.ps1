@@ -1,9 +1,9 @@
 [System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::UTF8
-New-Alias ll ls -Force      			# ll -> detailed dir listing
-function .. { cd .. }                           # Go up one directory
-function ... { cd ../.. }                       # Go up two directories
-function cl { clear }                           # Clear screen
-function rm { remove-item }            		# Remove
+New-Alias ll ls -Force
+function .. { cd .. }
+function ... { cd ../.. }
+function cl { clear }
+function rm { remove-item }
 function home { cd $env:userprofile }
 function touch {if((Test-Path -Path ($args[0])) -eq $false) {Set-Content -Path ($args[0]) -Value ($null)} else {(Get-Item ($args[0])).LastWriteTime = Get-Date } }
 function rmrf {
