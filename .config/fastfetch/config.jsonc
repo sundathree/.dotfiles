@@ -52,7 +52,7 @@
     },
     {
       "type": "shell",
-      "format": "{process-name} {version}",
+      "format": "{pretty-name} {version}",
       "key": "shell",
       "keyWidth": 8
     },
